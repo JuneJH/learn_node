@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first node server!!!</title>
+</head>
+<body>
+    <h1>hello node !!!</h1>
+    <img src="./hld.jpeg" alt="">
+    <div id="root"></div>
+
+
+    <script>
+        fetch("/user").then(res=>res.json()).then(res=>{
+            const str = `
+                <div>姓名：${res.name}</div>
+                <div>年龄：${res.age}</div>
+                <div>性别：${res.sex}</div>
+            `
+            root.innerHTML = str;
+        })
+
+    </script>
+</body>
+</html>
