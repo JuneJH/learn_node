@@ -12,7 +12,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^5.0.1",
+    "clear": "^0.1.0",
+    "color": "^4.2.3",
+    "colors": "^1.4.0",
     "commander": "^9.4.0",
-    "download-git-repo": "^3.0.2"
+    "download-git-repo": "^3.0.2",
+    "figlet": "^1.5.2",
+    "handlebars": "^4.7.7",
+    "open": "^8.4.0",
+    "ora": "^6.1.2"
   }
 }
