@@ -6,5 +6,8 @@ module.exports = {
 
     get url (){
         return this.res.url;
+    },
+    get method(){
+        return this.res.method.toLocaleLowerCase();
     }
 }

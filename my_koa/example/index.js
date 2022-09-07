@@ -1,7 +1,18 @@
 const MyKoa = require("../src");
 const {dely} = require("../src/tools");
+const Router = require("../src/middleware/Router");
 
 const app = new MyKoa();
+const router = new Router();
+
+router.get("/user",(ctx,next)=>{
+    ctx.body = "{name:june,age:18}";
+    next();
+})
+router.get("/user/list",(ctx,next)=>{
+    ctx.body = "[{name:june,age:18}]";
+    next();
+})
 
 app.use(async (ctx,next)=>{   
     ctx.body = "1";
@@ -21,7 +32,7 @@ app.use(async (ctx,next)=>{
     ctx.body += "3";
 
 })
-
+app.use(router.routes());
 
 app.listen(3000,()=>{
     console.log("serve start at ",3000);
