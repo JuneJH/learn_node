@@ -15,7 +15,6 @@ function compose(middleware){
     }
     
 }
-console.log(dely)
 async function fn1(ctx,next){
     console.log("1 start");
     await dely(2000);
@@ -35,8 +34,8 @@ async function fn3(ctx,next){
 
 
 
-// const newFn = compose([fn1,fn2,fn3]);
-// newFn("123");
+const newFn = compose([fn1,fn2,fn3]);
+newFn("123");
 
 
 module.exports = compose;
