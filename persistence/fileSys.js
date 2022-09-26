@@ -1,3 +1,6 @@
+/**
+ * 文件持久化
+ */
 const fs = require("fs");
 const readLine = require("readline");
 

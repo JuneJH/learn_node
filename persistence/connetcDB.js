@@ -1,3 +1,6 @@
+/**
+ * 连接mysql示例
+ */
 const mysql = require("mysql");
 // 踩坑，mysql8使用加密方式不同，mysql库不支持，所以需要更改加密方式
 // alter user 'root'@'%' identified with mysql_native_password by 'root';

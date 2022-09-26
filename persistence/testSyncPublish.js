@@ -1,3 +1,6 @@
+/**
+ * 测试发布订阅串联异步
+ */
 function init() {
     const mongodbManage = require("./syncPublish");
     mongodbManage.once("connect", async () => {

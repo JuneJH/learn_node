@@ -1,3 +1,6 @@
+/**
+ * 连接mongodb示例
+ */
 const {MongoClient} = require("mongodb");
 (async ()=>{
     const instance = new MongoClient("mongodb://121.36.51.141:27017",{

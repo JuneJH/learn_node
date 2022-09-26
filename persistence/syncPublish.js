@@ -1,3 +1,6 @@
+/**
+ * 发布订阅串联异步
+ */
 const {MongoClient} = require("mongodb");
 const {EventEmitter} = require("events");
 class SyncPublish{
